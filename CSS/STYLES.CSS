@@ -1,0 +1,74 @@
+*universal selector*/
+*,
+*::after
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100;
+    background:  linear-gradient(to top,rgba)
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+      width: 1200px;
+      height: 80px;
+      margin: auto;
+}
+.logo{
+    color: black;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif ;
+    padding-left: 20px;
+    float: left;
+    padding-top: 12px;
+
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 80px;
+
+}
+ul{
+    float: right;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+ul li{
+    list-style: none;
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 16px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: 0.4 ease-in-out;
+}
+ul li a:hover{
+    color: blueviolet;
+}
+.search{
+    width: 330px;
+    float: right;
+    margin-right: 270px;
+}
+.Btn{
+    width: 100%;
+    height: 40px;
+    background: blue;
+    border: 2px solid blue;
+    margin-top: 13px;
+    color: aquamarine;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px ;
+}

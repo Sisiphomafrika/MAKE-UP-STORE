@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Bookworm - Your Online Bookstore</title>
+    <style>
+        /* Creative styling for your webpage */
+        header {
+            background-color: #db349e; /* Blue background color for the header */
+            color: rgb(255, 255, 255); /* White text color */
+            text-align: center;
+            padding: 20px;
+        }
+​
+        nav {
+            background-color: #2ecc71; /* Green background color for the navigation */
+            display: flex; /* Use a flex layout for the navigation links */
+            justify-content: space-around;
+            padding: 10px;
+        }
+​
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+​
+        nav li {
+            margin: 0 10px;
+        }
+​
+        nav a:hover {
+            background-color: #f1c40f;
+        }
+​
+        section.about {
+            background-color: #e74c3c; /* Red background color for the "About Us" section */
+            color: white; /* White text color */
+            padding: 20px;
+            text-align: center;
+        }
+​
+        section.newsletter {
+            background-color: #f1c40f; /* Yellow background color for the newsletter section */
+            color: #333; /* Dark text color */
+            text-align: center;
+            padding: 20px;
+        }
+​
+        footer {
+            background-color: #34495e; /* Dark blue background color for the footer */
+            color: white; /* White text color */
+            text-align: center;
+            padding: 10px;
+        }
+​
+        /* Your general CSS styles that apply to all screen sizes */
+​
+        /* Media query for screens with a maximum width of 768px */
+        @media screen and (max-width: 768px) {
+            /* Add your CSS styles for screens with a maximum width of 768px here */
+            body {
+                font-size: 16px; /* Adjust the font size for smaller screens */
+            }
+        }
+​
+        /* Media query for screens with a maximum width of 480px */
+        @media screen and (max-width: 480px) {
+            /* Add your CSS styles for screens with a maximum width of 480px here */
+            body {
+                font-size: 14px; /* Adjust the font size for even smaller screens */
+            }
+        }
+​
+        div {
+            display: inline-block;
+            text-align: left;
+            padding: 10px;
+            margin: 10px;
+        }
+​
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px; /* Set the maximum width of the image */
+        }
+​
+        body {
+            background-color: #2ecc71; /* Set a green background color for the content */
+        }
+​
+        section.newsletter {
+            background-color: #f1c40f;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+​
+<body>
+    <header>
+        <h1>Welcome Bookworm</h1>
+        <p>Your Online Bookstore</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="Checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+​
+    <section class="about">
+        Categories
+    </section>
+​
+    <section class="categories">
+        <div class="video">
+            <video autoplay loop muted>
+                <source src="Lib.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+        <div>
+            <a href="moral.jpg">Moral Essays</a>
+            <img src="moral.jpg" alt="Moral Essays">
+        </div>
+        <div>
+            <a href="man.jpg">No Man Is an Island</a>
+            <img src="man.jpg" alt="No Man Is an Island">
+        </div>
+        <!-- Add more categories if needed -->
+    </section>
+​
+    
+    <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Stay updated with our latest books and offers.</p>
+        <form action="https://formspree.io/f/myyqlapq" method="POST">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for "name">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Subscribe">
+        </form>
+    </section>
+​
+    <footer>
+        <p>&copy; 2023 Bookworm - Your Online Bookstore</p>
+    </footer>
+</body>
+</html>
