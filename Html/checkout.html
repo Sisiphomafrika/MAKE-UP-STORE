@@ -1,0 +1,148 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Bookworm - Your Online Bookstore</title>
+</head>
+<body>
+    <style>
+        /* Creative styling for your webpage */
+    header {
+        background-color: #3498db; /* Blue background color for the header */
+        color: white; /* White text color */
+        text-align: center;
+        padding: 20px;
+    }
+    
+    nav {
+        background-color: #2ecc71; /* Green background color for the navigation */
+        display: flex; /* Use a flex layout for the navigation links */
+        justify-content: space-around;
+        padding: 10px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        margin: 0 10px;
+    }
+    nav a:hover{
+        background-color: #f1c40f;
+}
+    
+    section.about {
+        background-color: #e74c3c; /* Red background color for the "About Us" section */
+        color: white; /* White text color */
+        padding: 20px;
+        text-align: center;
+    }
+    
+    section.newsletter {
+        background-color: #f1c40f; /* Yellow background color for the newsletter section */
+        color: #333; /* Dark text color */
+        text-align: center;
+        padding: 20px;
+    }
+    
+    footer {
+        background-color: #34495e; /* Dark blue background color for the footer */
+        color: white; /* White text color */
+        text-align: center;
+        padding: 10px;
+    }
+        /* Your general CSS styles that apply to all screen sizes */
+    
+    /* Media query for screens with a maximum width of 768px */
+    @media screen and (max-width: 768px) {
+        /* Add your CSS styles for screens with a maximum width of 768px here */
+        body {
+            font-size: 16px; /* Adjust the font size for smaller screens */
+        }
+    
+        /* You can modify other styles as needed for smaller screens */
+    }
+    
+    /* Media query for screens with a maximum width of 480px */
+    @media screen and (max-width: 480px) {
+        /* Add your CSS styles for screens with a maximum width of 480px here */
+        body {
+            font-size: 14px; /* Adjust the font size for even smaller screens */
+        }
+    
+    } 
+    section.newsletter {
+    background-color: #f1c40f; /* Yellow background color for the newsletter section */
+    color: #333; /* Dark text color */
+    text-align: center;
+    padding: 20px;
+}
+​
+​
+        </style>
+    <header>
+        <h1>Welcome to Bookworm</h1>
+        <p>Your Online Bookstore for bookworms</p>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="admin.html">Checkout</a></li>
+            <li><a href="Checkout.html">Checkout</a></li>
+​
+        </ul>
+    </nav> 
+    <section class="about">
+        <p>At Bookworm, we are committed to making your reading experience unforgettable. We understand that books are not just words on paper; they are portals to new worlds, fonts of knowledge, and companions through the journey of life. That's why we take pride in curating an extensive collection of both timeless classics and the latest bestsellers. We are constantly updating our shelves to ensure that you have access to the most exciting and thought-provoking literature available.</p>
+        <p>Our User-Friendly Online Store:</p>
+        </section>
+​
+    <section class="checkout">
+        <form
+        action="https://formspree.io/f/myyqlapq"
+        method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+​
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+​
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea><br><br>
+​
+            <label for="card">Credit Card Number:</label>
+            <input type="text" id="card" name="card" required><br><br>
+​
+            <label for="expiry">Expiration Date:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required><br><br>
+​
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required><br><br>
+            <input type="submit" value="Checkout">
+    </section>
+    <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Stay updated with our latest books and offers.</p>
+        <form
+        action="https://formspree.io/f/myyqlapq"
+        method="POST">    
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Subscribe">
+          </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Bookworm - Your Online Bookstore</p>
+    </footer>
+</body>
+</html>
